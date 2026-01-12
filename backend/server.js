@@ -10,7 +10,9 @@ const {
   NOWPAYMENTS_PASSWORD,
   PAYOUT_SECRET,
 } = process.env;
-
+app.get("/testing",async(req, res)=>{
+    res.send("working----");
+})
 app.post("/process-payout", async (req, res) => {
   try {
     // SECRET AUTH
